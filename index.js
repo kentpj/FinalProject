@@ -123,7 +123,7 @@ function startTimer() {
   }
 }
 
-myButton.addEventListener("click", onClick);
+//myButton.addEventListener("click", onClick);
 
 function onClick() {
   counter = 0;
