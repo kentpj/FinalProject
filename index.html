@@ -10,14 +10,14 @@
   <body>
     <div class="wrapper">
       <h1>Memory Pairs Game</h1>
+      <h3>LEVEL</h3>
+      <span class="level" id="level">1</span>
       <h3>Click any card to begin</h3>
       <button onclick="window.location.reload();">New Game</button>
+      <button class="btnNextLevel" onclick="onClick()">Next Level</button>
       <p>
-        <span class="seconds" id="seconds">00</span>:<span
-          class="tens"
-          id="tens"
-          >00</span
-        >
+        <span class="seconds" id="seconds">00</span>:
+        <span class="tens" id="tens">00</span>
       </p>
       <p id="text"></p>
       <div class="cardContent" id="container"></div>
