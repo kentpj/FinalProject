@@ -1,0 +1,182 @@
+/* Variabes */
+/* Mixin's */
+body {
+  background: #2e006b;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+}
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 2.6em;
+  text-transform: uppercase;
+}
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 2.6em;
+  text-transform: uppercase;
+}
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 1.4em;
+  text-transform: uppercase;
+}
+#seconds,
+#tens {
+  font-size: 2em;
+}
+button {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -khtml-border-radius: 5px;
+  background: #82d2e5;
+  color: #fff;
+  border: solid 1px #fff;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 18px 10px;
+  width: 180px;
+  margin: 10px;
+  outline: none;
+}
+button:hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background: #fff;
+  border: solid 1px #fff;
+  color: #82d2e5;
+}
+#container {
+  width: 520px;
+  margin: 10px auto;
+  align-content: center;
+}
+#container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+[data-view="card"] {
+  transform: rotateY(180deg);
+  width: 80px;
+  height: 100px;
+  border: solid 1px #d3cece;
+  border-radius: 5px;
+  float: left;
+  margin: 10px;
+  cursor: pointer;
+  background: linear-gradient(
+      135deg,
+      #f3f3f3 22px,
+      #fff 22px,
+      #fff 24px,
+      transparent 24px,
+      transparent 67px,
+      #fff 67px,
+      #fff 69px,
+      transparent 69px
+    ),
+    linear-gradient(
+        225deg,
+        #f3f3f3 22px,
+        #fff 22px,
+        #fff 24px,
+        transparent 24px,
+        transparent 67px,
+        #fff 67px,
+        #fff 69px,
+        transparent 69px
+      )
+      0 64px;
+  background-color: #f3f3f3;
+  background-size: 64px 128px;
+}
+.flipped {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+  transform: rotateY(0deg);
+}
+.reverse {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+  transform: rotateY(180deg);
+}
+.correct {
+  opacity: 0.5;
+  cursor: default;
+  transform-style: preserve-3d;
+  position: relative;
+  transform: rotateY(0deg);
+}
+/* Icons */
+.correct[data-item="card1"],
+.flipped[data-item="card1"] {
+  background: url("https://img.utdstc.com/icon/12c/9dc/12c9dc1a120e03c8397edc55a95dafada5797e762d4a47dd7514c71803ffdb0c:100")
+    left center no-repeat #fff;
+  background-size: contain;
+}
+.correct[data-item="card2"],
+.flipped[data-item="card2"] {
+  background: url("https://iconarchive.com/download/i107513/google/noto-emoji-food-drink/32426-candy.ico")
+    left center no-repeat #fff;
+  background-size: contain;
+}
+.correct[data-item="card3"],
+.flipped[data-item="card3"] {
+  background: url("https://endlessicons.com/wp-content/uploads/2012/10/Candy-icon-614x460.png")
+    left center no-repeat #fff;
+  background-size: contain;
+}
+.correct[data-item="card4"],
+.flipped[data-item="card4"] {
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb0UTxnUQKgq5wxxUohnjyodg_EgUw67r0gA&usqp=CAU")
+    left center no-repeat #fff;
+  background-size: contain;
+}
+.correct[data-item="card5"],
+.flipped[data-item="card5"] {
+  background: url("https://cdn.iconscout.com/icon/premium/png-256-thumb/candy-crush-3214405-2693072.png")
+    left center no-repeat #fff;
+  background-size: contain;
+}
+
+.correct[data-item="card6"],
+.flipped[data-item="card6"] {
+  background: url("https://img.apkgit.com/35/com.sagcrscansdl.rok/1.1/icon.png")
+    left center no-repeat #fff;
+  background-size: contain;
+}
+.correct[data-item="card7"],
+.flipped[data-item="card7"] {
+  background: url("https://tipsandtricksfor.com/wp-content/uploads/2018/05/five-extra-moves-candy-crushs-saga.png")
+    left center no-repeat #fff;
+  background-size: contain;
+}
+.correct[data-item="card8"],
+.flipped[data-item="card8"] {
+  background: url("https://static.vecteezy.com/system/resources/previews/011/658/818/original/sweet-candy-icon-sugar-candy-clipart-free-png.png")
+    left center no-repeat #fff;
+  background-size: contain;
+}
+.correct[data-item="card9"],
+.flipped[data-item="card9"] {
+  background: url("https://img.freepik.com/premium-vector/lollipop-vector-isolated-icon-emoji-illustration-lollipop-vector-emoticon_603823-1001.jpg?w=2000")
+    left center no-repeat #fff;
+  background-size: contain;
+}
+.correct[data-item="card10"],
+.flipped[data-item="card10"] {
+  background: url("https://image.shutterstock.com/image-vector/ice-cream-refreshing-dessert-ball-260nw-1087484450.jpg")
+    left center no-repeat #fff;
+  background-size: contain;
+}
